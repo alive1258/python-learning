@@ -10,3 +10,10 @@ def famous_name(fist,last,title,adition):
     return name
 name = famous_name("John", "Doe", "Mr.", "PhD")
 print("Famous name:", name)
+
+def a_lot(num1,num2):
+    total = num1 + num2
+    multiplication = num1 * num2
+    remainder = num1 % num2
+    return total, multiplication, remainder
+print("Total, Multiplication, Remainder:", a_lot(10, 3))
