@@ -8,3 +8,4 @@ for num in numbers:
 print(odds)
 odds_numbers = [num for num in numbers if num % 2 == 1 and num % 3 == 0]
 print(odds_numbers)
+
