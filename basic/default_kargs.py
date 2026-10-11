@@ -17,3 +17,5 @@ def a_lot(num1,num2):
     remainder = num1 % num2
     return total, multiplication, remainder
 print("Total, Multiplication, Remainder:", a_lot(10, 3))
+
+

@@ -26,3 +26,4 @@ actor=[
     ]
 
 junior=list(filter(lambda actor: actor["age"] < 30, actor))
+print(junior)  # Output: [{'name': 'Alice', 'age': 25}, {'name': 'Charlie', 'age': 28}]
