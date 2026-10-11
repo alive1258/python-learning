@@ -102,3 +102,4 @@ GitHub: [@alive1258](https://github.com/alive1258)
 ---
 
 _Learning by doing, improving through practice, and building one project at a time._
+Python learning journey covering fundamentals, functions, data structures, exception handling, file operations, and OOP projects.
