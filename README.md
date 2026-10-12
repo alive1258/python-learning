@@ -40,7 +40,9 @@ This repository contains my notes, practice code, and projects as I strengthen m
 - File Reading and Writing
 - Lambda Functions
 
-### Module 05: Object-Oriented Programming (OOP)
+### Module 05: Python Object-Oriented Programming (OOP)
+
+#### OOP Fundamentals
 
 - Introduction to Classes
 - Creating and Using Methods
@@ -49,6 +51,18 @@ This repository contains my notes, practice code, and projects as I strengthen m
 - Bank Account: Deposit, Withdrawal, and Balance Management
 - Shopping Cart, Checkout, and Price Calculations
 - School Management System Using Multiple Classes
+
+#### Inheritance, Encapsulation, Abstraction, and Polymorphism
+
+- **6.1:** Introduction to OOP with Fleet Management
+- **6.2:** Common and Uncommon Things and Inheritance
+- **6.3:** Multilevel Inheritance
+- **6.4:** Multiple Inheritance and Inheritance Concepts
+- **6.5:** Encapsulation and Access Modifiers (Public, Private, Protected)
+- **6.6:** Abstract Classes and Abstract Methods
+- **6.7:** Abstract Classes vs. Interfaces
+- **6.8:** Polymorphism
+- **6.9:** Module Summary
 
 ## 🛠️ Practice Projects
 
@@ -64,6 +78,10 @@ Building a shopping cart with product management, quantity calculations, item re
 
 Using multiple classes to manage student enrollment, teacher registration, and school records.
 
+### 4. Fleet Management System
+
+Practicing OOP concepts by modeling vehicles and exploring inheritance, shared properties, and specialized behaviors.
+
 ## 💻 Technologies and Tools
 
 - Python 3
@@ -78,10 +96,9 @@ Using multiple classes to manage student enrollment, teacher registration, and s
 - Build a strong foundation in Python programming.
 - Understand functions, data structures, and error handling.
 - Apply OOP concepts to practical problems.
+- Understand inheritance, encapsulation, abstraction, and polymorphism.
 - Write clean, reusable, and maintainable code.
 - Develop real-world projects through consistent practice.
-
-_Note: The folder structure is a suggested organization. Update it to match your actual repository._
 
 ## 📈 Progress
 
@@ -102,4 +119,3 @@ GitHub: [@alive1258](https://github.com/alive1258)
 ---
 
 _Learning by doing, improving through practice, and building one project at a time._
-Python learning journey covering fundamentals, functions, data structures, exception handling, file operations, and OOP projects.
