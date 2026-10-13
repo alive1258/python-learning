@@ -64,6 +64,8 @@ This repository contains my notes, practice code, and projects as I strengthen m
 - **6.8:** Polymorphism
 - **6.9:** Module Summary
 
+Interview question :- Abstraction vsInterface diffrent
+
 ## 🛠️ Practice Projects
 
 ### 1. Bank Account Management
