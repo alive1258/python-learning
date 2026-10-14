@@ -52,7 +52,7 @@ This repository contains my notes, practice code, and projects as I strengthen m
 - Shopping Cart, Checkout, and Price Calculations
 - School Management System Using Multiple Classes
 
-#### Inheritance, Encapsulation, Abstraction, and Polymorphism
+#### Module 06 - Inheritance, Encapsulation, Abstraction, and Polymorphism
 
 - **6.1:** Introduction to OOP with Fleet Management
 - **6.2:** Common and Uncommon Things and Inheritance
@@ -64,7 +64,19 @@ This repository contains my notes, practice code, and projects as I strengthen m
 - **6.8:** Polymorphism
 - **6.9:** Module Summary
 
-Interview question :- Abstraction vsInterface diffrent
+**Interview Question:** What is the difference between Abstraction and Interface?
+
+### Module 07: OOP More
+
+- **7.1:** Operator Overloading and Method Overriding
+- **7.2:** Static Attributes, Static Methods, and Class Method Decorators
+- **7.3:** Getters, Setters, and Read-Only Properties Using the Property Decorator
+- **7.4:** Understanding Inner Functions and Wrapper Functions
+- **7.5 (Optional):** How Decorators Work
+- **7.6:** Class Composition — Inheritance vs. Composition
+- **7.7:** A Short Overview of UML Diagrams
+- **7.8:** Design Patterns — Singleton, Factory, Builder, and More
+- **7.9:** Module Summary
 
 ## 🛠️ Practice Projects
 
@@ -74,7 +86,7 @@ Practicing classes and methods to manage deposits, withdrawals, and account bala
 
 ### 2. Shopping Cart System
 
-Building a shopping cart with product management, quantity calculations, item removal, and checkout functionality.
+Building a cart with product management, quantity calculations, item removal, and checkout functionality.
 
 ### 3. School Management System
 
@@ -83,6 +95,14 @@ Using multiple classes to manage student enrollment, teacher registration, and s
 ### 4. Fleet Management System
 
 Practicing OOP concepts by modeling vehicles and exploring inheritance, shared properties, and specialized behaviors.
+
+### 5. OOP Advanced Practice
+
+Practicing operator overloading, method overriding, decorators, class methods, static methods, properties, and composition.
+
+### 6. Design Patterns Practice
+
+Implementing Singleton, Factory, and Builder patterns to understand reusable software design approaches.
 
 ## 💻 Technologies and Tools
 
@@ -99,6 +119,8 @@ Practicing OOP concepts by modeling vehicles and exploring inheritance, shared p
 - Understand functions, data structures, and error handling.
 - Apply OOP concepts to practical problems.
 - Understand inheritance, encapsulation, abstraction, and polymorphism.
+- Learn operator overloading, overriding, decorators, and composition.
+- Understand UML diagrams and common design patterns.
 - Write clean, reusable, and maintainable code.
 - Develop real-world projects through consistent practice.
 
@@ -110,6 +132,9 @@ Practicing OOP concepts by modeling vehicles and exploring inheritance, shared p
 - [x] Introduction to OOP and class-based projects
 - [ ] Inheritance and polymorphism
 - [ ] Encapsulation and abstraction
+- [ ] Advanced OOP concepts
+- [ ] Decorators and properties
+- [ ] Composition and design patterns
 - [ ] Advanced OOP projects
 
 ## 👨‍💻 Author
