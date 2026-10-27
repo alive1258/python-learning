@@ -27,12 +27,19 @@ class Admin(User):
 
     def view_employee(self,restaurent):
         restaurent.view_employee ()
+
+    def add_new_item(self,restaurent,item):
+        restaurent.menu.add_menu_item(item)
+
+    def delete_item(self,restaurent,item):
+        restaurent.menu.remover_item(item)   
       
 
 class Restaurent:
     def __init__(self,name):
         self.name=name
         self.employees=[] #eta database
+        self.menu=FoodItem()
 
     def add_employee(self,employee):
         self.employees.append(employee)
@@ -41,6 +48,8 @@ class Restaurent:
         print("Employee List!")
         for emp in self.employees:
             print(emp.name, emp.email, emp.phone, emp.address) 
+
+    
 
 class Menu:
     def __init__(self):
@@ -61,9 +70,23 @@ class Menu:
             self.items.remove(item)
             print("Item deleted")
         else:
-            print("item not found")                
+            print("item not found") 
 
-add= Admin("Kamri","1234322","karim@gmail.com","dhaka")
-add.add_employee("maruk","123e4322","maruk@gmail.com","dhaka",32,"chef",234565)
+    def show_menu(self):
+        print("*****Menu*****") 
+        print("Name\tPrice\tQuantity")
+        for item in self.items:
+            print(f"{item.name}\t{item.price}\t{item.quantity}")  
 
-add.view_employee()
+class FoodItem:
+    def __init__(self,name, price, quantity):
+        self.name=name
+        self.price=price
+        self.quantity=quantity                    
+
+
+mnu=Menu()
+item =FoodItem("pizza",12.45,10)
+mnu.add_menu_item(item)
+mnu.show_menu()
+
