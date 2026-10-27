@@ -7,6 +7,28 @@ class User(ABC):
         self.phone=phone
         self.address=address
 
+class Customer(User):
+    def __init__(self, name, phone, email, address):
+            super().__init__(name, phone, email, address)
+            self.cart=None
+
+    def view_menu(self, restaurent):
+        restaurent.menu.show_menu()
+
+    def add_to_cart(self,restaurent,item_name):
+        item=restaurent.menu.find_item(item_name)
+        if item:
+            pass
+        else:
+            print("item not found")
+
+    def view_cart(self):
+        print("*****View Cart*****") 
+        print("Name\tPrice\tQuantity")
+        for item in self.items:
+            print(f"{item.name}\t{item.price}\t{item.quantity}")  
+            
+
 class Employee(User):
     def __init__(self, name, phone, email, address,age,designation,salary):
         super().__init__(name, phone, email, address)
