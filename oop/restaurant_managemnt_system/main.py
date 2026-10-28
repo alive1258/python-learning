@@ -110,7 +110,7 @@ def admin_menu():
             admin.add_employee(mamer_restaurant, employee)
 
         elif choice == 3:
-            admin.view_employees(mamer_restaurant)
+            admin.view_employee(mamer_restaurant)
 
         elif choice == 4:
             admin.view_items(mamer_restaurant)
@@ -125,3 +125,18 @@ def admin_menu():
 
         else:
             print("Invalid choice! Please select 1-6.")
+
+while True:
+    print("welcome!!")
+    print("1. Customer!!")
+    print("2. Admin!!")
+    print("3. Exit!!")
+    choise = int(input("Enter your choice : "))
+    if choise == 1:
+        customer_menu()
+    elif choise == 2:
+        admin_menu()
+    elif choise == 3:
+        break
+    else:
+        print("invalid Input!!")    
