@@ -10,15 +10,17 @@ class User(ABC):
 class Customer(User):
     def __init__(self, name, phone, email, address):
             super().__init__(name, phone, email, address)
-            self.cart=None
+            self.cart=Order()
 
     def view_menu(self, restaurent):
         restaurent.menu.show_menu()
 
-    def add_to_cart(self,restaurent,item_name):
+    def add_to_cart(self,restaurent,item_name,quantity):
         item=restaurent.menu.find_item(item_name)
         if item:
-            pass
+            item.quantity=quantity
+            self.cart.add_item(item)
+            print("item Added")
         else:
             print("item not found")
 
@@ -82,7 +84,7 @@ class Restaurent:
     def __init__(self,name):
         self.name=name
         self.employees=[] #eta database
-        self.menu=FoodItem()
+        self.menu=Menu()
 
     def add_employee(self,employee):
         self.employees.append(employee)
@@ -127,9 +129,16 @@ class FoodItem:
         self.price=price
         self.quantity=quantity                    
 
-
+mamr_res=Restaurent("mamaer resturant")
 mnu=Menu()
 item =FoodItem("pizza",12.45,10)
-mnu.add_menu_item(item)
-mnu.show_menu()
+item2 =FoodItem("eeee",12.45,10)
+admin =Admin("abir","abir55@gmail.col",12343,"dhaka")
+admin.add_new_item(mamr_res,item)
+admin.add_new_item(mamr_res,item2)
+
+
+
+customer1 =Customer("abir","abir55@gmail.col",12343,"dhaka")
+customer1.view_menu(mamr_res)
 
