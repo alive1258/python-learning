@@ -1,4 +1,5 @@
 from abc import ABC
+from orders import Order
 
 class User(ABC):
     def __init__(self,name,phone,email,address):
@@ -32,29 +33,11 @@ class Customer(User):
         print("Name\tPrice\tQuantity")
         for item, quantity in self.cart.items.items():
             print(f"{item.name}\t{item.price}\t{quantity}")  
-        print(f"Total price : {self.cart.total_price}")    
+        print(f"Total price : {self.cart.total_price}")   
 
-class Order:
-    def __init__(self) -> None:
-        self.items={}
-
-    def add_item(self, item):
-        if item in self.items:
-            self.items[item] += item.quantity
-        else:
-            self.items[item] =item.quantity        
-
-    def remove(self):
-        if item in self.items:
-            del self.items[item]
-
-    @property
-    def total_price(self):
-        return sum(item.price * quantity for item,quantity in self.items.items())
-
-    def clear(self):
-        self.items={}
-    
+def pay_bill(self):
+    print(f"total {self.cart.total_price} paid successfully")
+    self.clear()
 
 class Employee(User):
     def __init__(self, name, phone, email, address,age,designation,salary):
@@ -82,73 +65,19 @@ class Admin(User):
 
     def delete_item(self,restaurent,item):
         restaurent.menu.remover_item(item)   
-      
 
-class Restaurent:
-    def __init__(self,name):
-        self.name=name
-        self.employees=[] #eta database
-        self.menu=Menu()
 
-    def add_employee(self,employee):
-        self.employees.append(employee)
-
-    def view_employee(self):
-        print("Employee List!")
-        for emp in self.employees:
-            print(emp.name, emp.email, emp.phone, emp.address) 
 
     
 
-class Menu:
-    def __init__(self):
-        self.items =[] # item er db 
 
-    def add_menu_item(self,item):
-        self.items.append(item)
-
-    def find_item(self,item_name):
-        for item in self.items:
-            if item.name.lower() == item_name.lower():
-                return item
-            return None
-
-    def remover_item(self,item_name):
-        item= self.find_item(item_name)
-        if item:
-            self.items.remove(item)
-            print("Item deleted")
-        else:
-            print("item not found") 
-
-    def show_menu(self):
-        print("*****Menu*****") 
-        print("Name\tPrice\tQuantity")
-        for item in self.items:
-            print(f"{item.name}\t{item.price}\t{item.quantity}")  
-
-class FoodItem:
-    def __init__(self,name, price, quantity):
-        self.name=name
-        self.price=price
-        self.quantity=quantity                    
-
-mamr_res=Restaurent("mamaer resturant")
-mnu=Menu()
-item =FoodItem("pizza",12.45,10)
-item2 =FoodItem("eeee",12.45,10)
-admin =Admin("abir","abir55@gmail.col",12343,"dhaka")
-admin.add_new_item(mamr_res,item)
-admin.add_new_item(mamr_res,item2)
+      
 
 
 
-customer1 =Customer("abir","abir55@gmail.col",12343,"dhaka")
-customer1.view_menu(mamr_res)
 
-item_name= input("Enter item name : ")
-item_quentity=int(input("Enter Item quantity : "))
 
-customer1.add_to_cart(mamr_res,item_name,item_quentity)
-customer1.view_cart()
+               
+
+
 
