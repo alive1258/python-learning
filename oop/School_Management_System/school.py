@@ -1,0 +1,60 @@
+
+
+class School():
+    def __init__(self,name,address) ->None:
+        self.name=name
+        self.address=address
+        self.teacher={}
+        self.classroom={}
+
+    def add_calssroom(self,classroom):
+        self.classroom[classroom.name]=classroom
+
+    def add_teacher(self,subject,teacher):
+        self.teacher[subject]=teacher
+
+    def student_admition(self,student):
+        pass
+
+
+    @staticmethod
+    def calculate_grade(marks):
+        if marks < 0 or marks > 100:
+            return "Invalid Marks"
+
+        elif marks >= 80 and marks <= 100:
+            return "A+"
+
+        elif marks >= 70 and marks < 80:
+            return "A"
+
+        elif marks >= 60 and marks < 70:
+            return "A-"
+
+        elif marks >= 50 and marks < 60:
+            return "B"
+
+        elif marks >= 40 and marks < 50:
+            return "C"
+
+        elif marks >= 33 and marks < 40:
+            return "D"
+
+        elif marks >= 0 and marks < 33:
+            return "F"
+
+    @staticmethod
+    def grade_to_value(grade):
+        grade_map ={
+            "A+": 5.00,
+            "A": 4.00,
+            "A-": 3.50,
+            "B": 3.00,
+            "C": 2.00,
+            "D": 1.00,
+            "F": 0.00,
+        }
+        return grade_map[grade]
+        
+              
+
