@@ -12,5 +12,5 @@ class Passenger:
         print(f"Phone Number: {self.phone}")
         print(f"Bus Number: {self.bus.number}")
         print(f"Route: {self.bus.route}")
-        print(f"Ticket Fare: TK{self.fare}")
+        print(f"Ticket Fare: ৳{self.fare}")
         print("================================")
