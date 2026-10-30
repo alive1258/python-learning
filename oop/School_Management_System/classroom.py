@@ -6,11 +6,11 @@ class ClassRoom:
         self.subjects = []
 
     def add_student(self, student):
-        roll_no= f"{self.name}-{len(self.students)+1}"
-        student.id=roll_no
-        self.students.append(student)
+        if student not in self.students:
+            self.students.append(student)
 
     def add_subject(self, subject):
+        if subject not in self.subjects:
             self.subjects.append(subject)
 
     def take_semester_final(self):
@@ -20,4 +20,9 @@ class ClassRoom:
         for student in self.students:
             student.calculate_final_grade()
 
-
+    def get_top_students(self):
+        return sorted(
+            self.students,
+            key=lambda student: student.gpa,
+            reverse=True
+        )
